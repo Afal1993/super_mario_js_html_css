@@ -1,11 +1,11 @@
-const mario = document.querySelector('.mario');
+const mario = document.querySelector('.mario'); // Atrela a const mario e pipe ao css dos mesmos
 const pipe = document.querySelector('.pipe');
 
 const marioJump = () => {
-    mario.classList.add('mario__jump'); 
+    mario.classList.add('mario__jump'); //adiciona a classe CSS e animação "mario__jump" ao mario
 
     setTimeout(() => {
-        mario.classList.remove('mario__jump')
+        mario.classList.remove('mario__jump') // remove a classe "mario__jump" ao mario, no tempo de 500ms de intervalo entre as ações
     }, 500);
 }
 
@@ -36,4 +36,4 @@ const loop = setInterval(() => {
 
 }, 10)
 
-document.addEventListener('keydown', marioJump);
+document.addEventListener('keydown', marioJump); //adiciona evento para acionar a const/função marioJump ao clicar em qualquer tecla
